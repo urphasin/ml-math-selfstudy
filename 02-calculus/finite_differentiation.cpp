@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include <cmath>
 
 // Define the function to differentiate
@@ -7,7 +8,7 @@ double function(double x) {
 }
 
 // Compute derivative using central difference method
-double derivative(double x, double h = 0.0001) {
+double derivative(double x, double h = 0.1) {
   return (function(x + h) - function(x - h)) / (2 * h);
 }
 
